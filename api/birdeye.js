@@ -20,7 +20,7 @@ export default async function handler(req, res) {
       },
     };
     const api =
-      "https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc";
+      "https://api.dexscreener.com/latest/dex/tokens/0xfa7ac3951fdca92c5200d468d31a365eb03b2be9936fde615e69f0c1274ad3a0::BLUB::BLUB";
 
     const { data } = await axios.get(api, options);
     res.status(200).json({ data: data });
